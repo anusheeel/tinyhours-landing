@@ -220,6 +220,37 @@ footer {
   gap: 18px;
 }
 
+.screenshots {
+  overflow: hidden;
+}
+
+.screenshot-rail {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.screenshot-rail figure {
+  margin: 0;
+  padding: 12px 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 16px 42px rgba(28, 53, 61, 0.1);
+}
+
+.screenshot-rail img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.screenshot-rail figcaption {
+  padding: 14px 4px 0;
+  color: var(--ink);
+  font-weight: 850;
+}
+
 .feature-card {
   padding: 28px;
   border: 1px solid var(--line);
@@ -340,6 +371,7 @@ footer {
 
   .proof-band,
   .feature-grid,
+  .screenshot-rail,
   .handoff,
   .split {
     grid-template-columns: 1fr;
