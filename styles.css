@@ -203,6 +203,21 @@ footer {
   line-height: 1.65;
 }
 
+.legal-page {
+  max-width: 860px;
+  padding: clamp(70px, 10vw, 130px) clamp(20px, 5vw, 72px);
+}
+
+.legal-page h1 {
+  font-size: clamp(3.5rem, 9vw, 6rem);
+}
+
+.legal-page p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
 .section,
 .handoff,
 .waitlist {
@@ -226,7 +241,7 @@ footer {
 
 .screenshot-rail {
   display: grid;
-  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 18px;
 }
 
@@ -257,6 +272,29 @@ footer {
   border-radius: 8px;
   background: white;
   box-shadow: 0 12px 34px rgba(28, 53, 61, 0.08);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pricing-grid strong {
+  display: block;
+  margin-top: 24px;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1;
+}
+
+.premium-card {
+  color: white;
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.premium-card p {
+  color: #b8d9d6;
 }
 
 .feature-icon {
@@ -371,6 +409,7 @@ footer {
 
   .proof-band,
   .feature-grid,
+  .pricing-grid,
   .screenshot-rail,
   .handoff,
   .split {
